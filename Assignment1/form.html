@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+
+    <h1>My Bio Data</h1>
+
+    <!-- This is a form where there you have to filled the basic personal information  -->
+
+
+
+    <form action="" method="get">
+
+        <fieldset>
+
+            <legend>Personal Information.</legend>
+
+            <!-- Enter Firstname -->
+
+            <label for="firstname">FirstName:</label>
+            <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+
+            <!-- Enter Lastname -->
+            <label for="lastname">LastName:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+            <br>
+            <br>
+
+            <!-- Radio button for choose your gender  -->
+
+            <label for="male">Male: </label>
+            <input type="radio" name="gender" id="male">
+
+            <label for="female">Female: </label>
+            <input type="radio" name="gender" id="female">
+
+            <label for="other">Other:</label>
+            <input type="radio" name="gender" id="other">
+
+            <br>
+            <br>
+
+            <!-- Date of Birth(dob) -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob">
+
+            <br>
+            <br>
+
+            <!-- Enter Email Here -->
+            <label for="email">E-Mail:</label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+            <br>
+            <br>
+
+            <!-- Phone number -->
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" maxlength="10" placeholder="+91" required>
+            <br>
+            <br>
+
+            <!-- height here -->
+            <label for="height">Height</label>
+            <input type="number" name="height" id="height" placeholder="Height in Feet" required>
+
+        </fieldset>
+
+        <fieldset>
+
+            <!-- fill your education details here -->
+            <legend>Education</legend>
+
+            <label for="school">School Name:</label>
+            <input type="text" name="school" id="school" placeholder="School Name" required>
+            <br>
+            <br>
+
+            <label for="class">Class:</label>
+            <input type="text" name="class" id="class" placeholder="Enter Class" required>
+            <br>
+            <br>
+
+            <!-- Dropdown Value -->
+            <label for="stream">Stream:</label>
+            <select id="stream">
+
+                <option value="stream">Stream</option>
+                <option value="cs">Computer Science</option>
+                <option value="ec">Electronics</option>
+                <option value="ee">Electrical</option>
+
+            </select>
+            <br>
+            <br>
+
+            <!-- below is the code for upload file -->
+
+            <label for="marksheet">Marksheet:</label>
+            <input type="file" name="file" id="marksheet">
+
+        </fieldset>
+        <br>
+
+        <input type="submit" name="Submit">
+
+    </form>
+
+
+
+</body>
+
+</html>
